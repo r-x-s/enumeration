@@ -40,7 +40,7 @@ cat  cat ~/.nano_history; cat ~/.atftp_history; cat ~/.mysql_history; cat ~/.php
 echo_command "cat /etc/passwd"
 cat /etc/passwd
 
-echo_command 'cat /etc/passwd 2>/dev/null | grep  "sh$"      ####users with shells'
+echo_command 'cat /etc/passwd 2>/dev/null | grep  "sh$"' "Users with shells"
 cat /etc/passwd 2>/dev/null | grep  "sh$"
 
 
