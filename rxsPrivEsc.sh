@@ -5,18 +5,6 @@ GREEN="${C}[1;32m"
 BLUE="${C}[1;34m"
 NC="${C}[0m"
 
-# test if sed supports -E or -r
-E=E
-echo | sed -${E} 's/o/a/' 2>/dev/null
-if [ $? -ne 0 ] ; then
-	echo | sed -r 's/o/a/' 2>/dev/null
-	if [ $? -eq 0 ] ; then
-		E=r
-	else
-		echo "${Y}WARNING: No suitable option found for extended regex with sed. Continuing but the results might be unreliable.${NC}"
-	fi
-fi
-
 
 echo_heading(){
  printf  "$BLUE**$1$NC\n"
