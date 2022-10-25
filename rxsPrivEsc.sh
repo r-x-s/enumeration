@@ -10,7 +10,7 @@ echo_heading(){
  printf  "$BLUE**$1$NC\n"
 }
 echo_section (){
-  printf "\n$RED**********\n$NC"
+  printf "\n$RED**********rxs***\n$NC"
 }
 
 echo_command(){
